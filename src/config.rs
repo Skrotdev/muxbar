@@ -1,4 +1,4 @@
-use modules::modules::{Battery, Cpu, DateTime, Memory, Text, TmuxContent, Warning};
+use modules::modules::{Battery, Cpu, DateTime, Memory, Text, TmuxContent, Warning, Weather};
 use modules::{modules::ToModule, Color, Icon, Module, Style};
 use std::time::Duration;
 
@@ -16,6 +16,7 @@ pub fn get_modules() -> Vec<Module<Box<dyn ToModule>>> {
         Some(Memory::new(2, 2).into()),
         Battery::try_new(2).ok().flatten().map(Into::into),
         Some(TmuxContent::SessionName.into()),
+        Some(Weather::new().into()),
         Warning::new_battery(20, 20.0)
             .ok()
             .flatten()
