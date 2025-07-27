@@ -12,6 +12,11 @@ Tmux status line configured in Rust.
     - Each module specifies when it needs to recompute and also how to update it self.
     - Once a module needs to recompute that specific module is updated
     - All other modules are cached
+- Kubernetes context + namespace status
+  - Displays current `kubectl` context and namespace inline
+- Dynamic weather module
+  - Fetches live temperature and weather conditions using Open-Meteo API
+  - Nerd Font icons adjust based on time (day/night) and conditions (rain, fog, etc.)
 
 ## Installation
 
@@ -39,4 +44,5 @@ The configuration is written in Rust and located in `./src/config.rs`
 
 ## Examples
 
-![Default](./assets/default.png)
+<img width="904" height="24" alt="image" src="https://github.com/user-attachments/assets/0f57d9f7-fcfe-4d81-80af-07b20a9e4ea7" />
+
