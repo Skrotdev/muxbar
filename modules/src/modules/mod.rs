@@ -7,7 +7,7 @@ macro_rules! modules {
     };
 }
 
-modules![battery, cpu, datetime, memory, tmux, uptime, warning, text, weather];
+modules![battery, cpu, datetime, memory, tmux, uptime, warning, text, weather, kube];
 
 use crate::{colors::Style, icons::Icon, outputter::Outputter};
 use std::{fmt, time::Duration};
