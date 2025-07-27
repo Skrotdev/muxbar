@@ -3,9 +3,7 @@ use modules::{modules::ToModule, Color, Icon, Module, Style};
 use std::time::Duration;
 
 pub fn get_modules() -> Vec<Module<Box<dyn ToModule>>> {
-    let text = "Muxbar";
     [
-        Text::new(text, 4, '.').map(Into::into),
         Some(Kube::new().into()),
         Some(
             Module::from(DateTime::new("%d-%m-%Y"))
