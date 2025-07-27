@@ -8,7 +8,7 @@ pub fn get_modules() -> Vec<Module<Box<dyn ToModule>>> {
         Text::new(text, 4, '.').map(Into::into),
         Some(Kube::new().into()),
         Some(
-            Module::from(DateTime::date_without_year())
+            Module::from(DateTime::new("%d-%m-%Y"))
                 .set_icon(Some(Icon::Calendar))
                 .set_style(Style::new_with_fg(Color::Yellow)),
         ),
