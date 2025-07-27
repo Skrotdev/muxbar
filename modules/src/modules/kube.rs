@@ -40,7 +40,7 @@ impl Kube {
 
 impl ToModule for Kube {
     fn icon(&self) -> Option<Icon> {
-        Some(Icon::Manual('⎈')) // Kubernetes icon from Nerd Fonts
+        Some(Icon::Manual('󰠳')) // Kubernetes icon from Nerd Fonts
     }
 
     fn style(&self) -> Style {
