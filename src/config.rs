@@ -1,4 +1,4 @@
-use modules::modules::{Battery, Cpu, DateTime, Memory, Text, TmuxContent, Warning, Weather, Kube};
+use modules::modules::{Battery, Cpu, DateTime, Memory, TmuxContent, Warning, Weather, Kube};
 use modules::{modules::ToModule, Color, Icon, Module, Style};
 use std::time::Duration;
 
